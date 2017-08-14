@@ -1,0 +1,10 @@
+#container {
+  border: solid 2px grey;
+  margin: 0 auto;
+  width: 360px;
+}
+
+.strike {
+  color: grey;
+  text-decoration: line-through;
+}
