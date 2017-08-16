@@ -13,6 +13,11 @@ $("input[type='text']").keypress(function(event){
   if(event.which === 13){
     var newToDo = $(this).val();
     $(this).val("");
-    $("ul").append("<li><span>X</span> " + newToDo + "</li>");
+    $("ul").append("<li>" + newToDo + " <span><i class='fa fa-trash-o' aria-hidden='true'></i></span></li>");
   }
+});
+
+$("h1").on("click", "i", function(){
+  $("input[type='text']").fadeToggle("fast");
+  $(this).toggleClass("fa-pencil").toggleClass("fa-list-ul");
 });
